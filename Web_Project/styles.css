@@ -1,0 +1,282 @@
+/* Place your CSS styles in this file */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    min-height: 1600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    padding-bottom: 60px;
+    background-color: rgb(238, 243, 243);
+    margin: 0;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    justify-content: flex-start;
+    background-color: slategrey;
+    color: floralwhite;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.lake, .visit {
+    display: block;
+    margin: 15px auto;
+}
+
+.spokane-flag {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
+.tacoma-flag {
+    position: absolute;
+    left: 9%;
+    top: 9%;
+}
+
+#seattle-flag {
+    position: absolute;
+    top: 2px;
+    left: 10%;
+}
+
+#state-symbol {
+    position: absolute;
+    left: 15%;
+}
+
+#olympia-symbol {
+    position: absolute;
+    top: 3.75%;
+    left: 10%;
+    border-radius: 45px;
+}
+
+#olympia-view {
+    margin-top: 0;
+    margin-left: 10px;
+    float: right;
+}
+
+.garden-text {
+    font-size: x-small;
+    text-align: center;
+}
+
+#capital, .garden, .mount-reiner {
+    margin-right: 10px;
+    float: left;
+}
+
+.music-img, .spokane-falls, .postcard {
+    position: relative;
+    top: -20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: small;
+    float: right;
+}
+
+.skyline {
+    text-align: center;
+    font-size: small;
+}
+
+header h1, header h3, header p {
+    font-style: italic;
+}
+
+nav {
+    position: fixed;
+    right: 2%;
+    top: 15px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+nav a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: floralwhite;
+    z-index: 5;
+}
+
+.active {
+    background-color: rgb(73, 73, 73);
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#container1 {
+    margin-top: 20px;
+}
+
+#container2 {
+    margin-bottom: 20px;
+}
+
+.about div, .facts div, .activities div {
+    background-color: lightgrey;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.about {
+    position: relative;
+    top: 80px;
+    float: left;
+    width: 70%;
+    background-color: snow;
+    padding: 10px;
+    z-index: 1;
+}
+
+#state-flag {
+    float: right;
+    padding: 15px;
+}
+
+.facts, .activities {
+    position: relative;
+    top: 100px;
+    float: left;
+    width: 70%;
+    background-color: snow;
+    padding: 10px;
+    z-index: 0;
+}
+
+.current_politics {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+aside {
+    position: fixed;
+    float: right;
+    top: 110px;
+    right: 2%;
+    width: 25%;
+    background-color: snow;
+    padding: 10px;
+}
+
+aside h3, aside p, aside h5 {
+    text-align: center;
+}
+
+#governor, #nature, .riverfront-park, .tacoma-view {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.current_politics ol {
+display: flex;
+flex-wrap: wrap;
+}
+
+.current_politics li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    position: fixed;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: slategrey;
+    color: floralwhite;
+    z-index: 4;
+}
+
+.footer h4 {
+    position: fixed;
+    bottom: -21px;
+    left: 35%;
+}
+
+aside .card {
+    padding: 10px;
+}
+
+#population, #income {
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+.activity-table {
+    margin: 0 auto;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#activity-link:link, #sub-form:link {
+    color: blue;
+}
+
+#activity-link:visited, #sub-form:visited {
+    color: purple;
+}
+
+.demographics {
+    margin-top: 2px;
+    margin-right: 10px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    float: inline-start; 
+}
+
+tr:nth-child(even), th:nth-child(even), td:nth-child(even) {
+    background-color: rgba(143, 170, 229, 0.5);
+}
+
+tr:nth-child(odd), th:nth-child(odd) {
+    background-color: rgba(99, 126, 184, 0.5);
+}
+
+.facts ul {
+    margin-bottom: 10px;
+    margin-top: 0;
+    display: inline-block;
+}
+
+form {
+    display: block;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+
+}

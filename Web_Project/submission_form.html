@@ -1,0 +1,78 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Chris Whaley">
+        <meta name="description" content="submission form page">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+        <title>Submit a form today!</title>
+
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body style="min-height: 950px;">
+        <header style="height: 80px;">
+            <h3>Want to stay on the know?</h3>
+            <p style="margin-left: 30px; margin-top: 20px;">Complete this form below to recieve updates by email!</p>
+        
+        <!--Navigation Bar-->
+            <nav>
+                <a class="active" href="./submission_form.html">Contact</a>
+                <a href="./tacoma.html">Tacoma</a>
+                <a href="./spokane.html">Spokane</a>
+                <a href="./seattle.html">Seattle</a> 
+                <a href="./olympia.html">Olympia</a>
+                <a href="./index.html">Home</a>
+            </nav>
+       </header>
+
+       <section>
+        <form>
+            <fieldset>
+                <legend>Fill out the information below:</legend>
+                <p>
+                    First name: <input type="text" id="fname" name="fname" placeholder="John">
+                </p>
+
+                <p>
+                    Last name: <input type="text" id="lname" name="lname" placeholder="Smith">
+                </p>
+
+                <p>
+                    Email: <input type="email" id="email" name="email" placeholder="jsmith123@example.com" onblur="confirmemail()" required>
+                </p>
+
+                <p>
+                    Confirm Email: <input type="email" id="confemail" name="confemail" placeholder="jsmith123@example.com" onblur="confirmemail()" required>
+                </p>
+
+                <p>
+                    <label for="question-field">Questions? Ask here!</label>
+                    <textarea id="question-field" name="question-field" placeholder="Ask us anything!" rows="7" cols="60"></textarea>
+                </p>
+
+                <p>
+                    <button onclick="confirmemail()" type="button" value="submit">Submit</button>
+                </p>
+            </fieldset>
+        </form>
+       </section>
+
+       <aside>
+        <img class="lake" src="Images/lake-view.jpeg" height="300px" width="350px" alt="Lake and Mountain view in Washington">
+        <img class="visit" src="Images/visit-washington.png" alt="Visit Washington Logo">
+       </aside>
+
+       <div class="footer">
+            <h4 style="left: 43%;">Created by <em>Chris Whaley</em></h4>
+       </div>
+
+        <!-- Load external JavaScript -->
+       <script src="scripts.js"></script>
+        
+
+    </body>
